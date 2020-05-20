@@ -216,7 +216,7 @@ namespace write
         output_to_file += fmt::format( empty_line );
 
         // The value dimension is always 3 since we are writting Vector3-data
-        output_to_file += fmt::format( "# valuedim: {}   ## field dimensionality\n", segment->valuedim );
+        output_to_file += fmt::format( "# valuedim: {}\n", segment->valuedim );
 
         //
         if( std::string(segment->valueunits) == "" )
@@ -242,7 +242,6 @@ namespace write
 
         // spatial unit
         output_to_file += fmt::format( empty_line );
-        output_to_file += fmt::format( "## Fundamental mesh measurement unit. Treated as a label:\n" );
         if( std::string(segment->meshunit) == "" )
             output_to_file += "# meshunit: unspecified\n";
         else
