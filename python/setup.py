@@ -123,7 +123,7 @@ if __name__ == "__main__":
         long_description = read(README),
         long_description_content_type = "text/markdown",
         license          = find_meta("license"),
-        url              = find_meta("uri"),
+        url              = find_meta("url"),
         version          = find_meta("version")+version_suffix,
         author           = find_meta("author"),
         author_email     = find_meta("email"),
